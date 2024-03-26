@@ -7,41 +7,74 @@
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a class="navAnchor" href='./aboutMe.html'>Home</a></li>
+            <li><a class="navAnchor" href='./aboutMe.html#about-me'>About Me</a></li>
+            <li><a class="navAnchor" href='./aboutMe.html#hoc'>History of Me</a></li>
+            <li><a class="navAnchor" href='./aboutMe.html#projects'>Projects</a></li>
+            <li><a class="navAnchor" href='./aboutMe.html#skills'>Skills</a></li>
+        </ul>
+    </nav>
+<main>
+    <div id="me">
+        <h1>Thanks for wanting to reach out!</h1>
+        <section id="contact-me">
+            <h2>Contact Info:</h2>
+            <p>Contact Number: 561 901 5485</p>
+            <p>Email: cleland16@gmail.com</p>
+            <p>Or try my links!</p>
+            <p>I look forward to hearing from you.</p>
 
-        <nav>
-            <ul>
-                <li><a class="navAnchor" href='./aboutMe.html#about-me'>About Me</a></li>
-                <li><a class="navAnchor" href='/aboutMe.html#hoc'>History of Me</a></li>
-                <li><a class="navAnchor" href='./aboutMe.html#projects'>Projects</a></li>
-                <li><a class="navAnchor" href='./aboutMe.html#skills'>Skills</a></li>
-                <li><a class="navAnchor" href='./aboutMe.html'>Home</a></li>
-            </ul>
-        </nav>
+            <a href="https://www.instagram.com/cleland16/" target="_blank" title="Contact me on Instagram"><img src='./images/instagram.png' class="photo"></a>
+            <a href="https://github.com/ciarancleland" target="_blank" title="Visit my Github"><img src='./images/github.png' class="photo"></a>
+        </section>
+    </div>
+    
+        <section id="inquiry">
+            
+            <form action="/example.html" method="POST">
+                <h2>Basic Inquiry?</h2>
+                <label for="prefix">Prefix</label>
+                <select id="prefix" name="prefix" required>
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="miss">Miss</option>
+                    <option value="ms">Ms.</option>
+                    <option value="dr">Dr.</option>
+                </select>
+                <br>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <br>
+                <label for="secondName">Second Name</label>
+                <input type="text" id="secondName" name="secondName">
+                <br>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">   
+                <label for="reason">Reason for Inquiry</label>
+                <select id="reason" name="reason">
+                    <option value="employment">Looking for work</option>
+                    <option value="interested">Interested to discuss opportunities</option>
+                    <option value="curious">How do I get involved?</option>
+                    <option value="starting">Where do I start?</option>
+                    <option value="help">Having problems</option>
+                </select>
+                <br>    
+                <label id="addinfo">Any Additional Information?</label>
+                <textarea id="addinfo" name="'addinfo" rows="10" cols="30"></textarea>
+                <input id="submitButton" type="submit" value="Send">
 
-    
-        <main>
-    
-            <h1>Thanks for wanting to reach out!</h1>
-    
-            <div id="me">
-            <section id="about-me">
-            <img src='./images/myPhoto.jpg' id="myphoto">
-            <h2>About Me</h2>
-            <p>Hi there! My name is Ciaran Cleland. I am a 29 Year Old who has recently decided to take a career path change! But you can learn more about that in my History of Ciaran Section!</p>
-            <p>Web Developement was always something I had considered, but due to my career decisions in life, did not seem obtainable. That is until I learned about Codecademy!</p>
-            <p>I am an avid fan of travelling. But then again, who isn't! To date I have travelled within 14 countries and 19 American States, and am not done yet!</p>
-            <p>In my spare time; I enjoy eating lots of different kinds of food, some exercising, reading and consuming more Tv/Film than a person probaby should! Since starting my codecademy, I have also found a new hobbie in trying to learn and test myself with new methods and coding skills to improve my current knowledge base. </p>
-            </section>
-    
-            <section id="hoc">
-            <h2>My History</h2>
-            <p>I had been living in America for the last 8 years. Before that though I grew up in Castlewellan, Co Down, Ireland. Look it's <a href ='https://www.google.com/search?q=castlewellan&rlz=1CAKDZI_enUS1075&oq=castlewellan&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyDQgBEC4YgwEYsQMYgAQyBggCEEUYQDIICAMQRRgnGDsyBggEEEUYOzIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDIzNzdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8' target="_blank" title="Castlewellan">right here!</a></p>
-            <p>Growing up I played different sports, but my main focus was on Karate, where I achieved numerous trophies and medals, and was fortunate enough to earn my 1st Dan Black Belt at the age of 17.</p>
-            <p>In my early years I was a student of St Malachys Primary School, before moving to St Louis Grammar School for my secondary levelk educations. A big thanks to those teachers who helped me throughout.</p>
-            <p>I studied at St Marys University Belfast to become a Secondary School Teacher, but that idea was short lived! The teaching world was just not for me. It was shortly after this at the age of 21 I moved to America</p>
-            <p>While living in America I had the privledge of moving to different states throughout my time. Florida, North Carolina and Pennsylvania. Each showing me some interesting places and people.</p>
-            <p>I found myself in the world of Country Clubs working within the Hospitality Sector, and worked my way up to a Directorship level by the time leaving the industry. The 1 area I truely fell in love with throughout this was Bars; their creation, development and management. Along with the Wine. Waow I had my eyes opened!</p>
-            </section>
-            </div>
+
+
+            </form>
+        </section>
+</main>
+
+<footer>
+    <p id="thanks">Thanks for checking out my page</p>
+    <p id="contact-info">I made this page ... seconds ago</p>
+</footer> 
+
 </body>
 </html>

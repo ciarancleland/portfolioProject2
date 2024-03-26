@@ -1,6 +1,7 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
+    min-height: 100vh;
 }
 
 nav {
@@ -34,63 +35,117 @@ nav li {
 
 main {
     padding-top: 80px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 80vh;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
+
+#me {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    clear: right;
+    width: 50%;
+}
 
 h1 {
     /*border: 2px solid black;*/
     padding: 15px;
     text-align: center;
-    margin: 0px 5px;
-    font-size: 3rem;
+    margin: 10px 10px 10px 5px;
+    font-size: 2rem;
     background-color: gray;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    flex: 0.5;
 }
 
-#me {
-    display:flex;
-    justify-content: space-around;
-}
-
-#about-me {
+#contact-me {
     /*border: 2px solid black;*/
     padding: 0 20px;
     margin: 10px 10px 10px 5px;
     height: 300px;
     border-radius: 20px;
-    overflow: scroll;
     background-color: lightslategray;
-    color:  black
+    color:  black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex: 1.5;
 }
 
-#aboutme h2 {
-    display: inline-flex;
-}
-
-#about-me #myphoto {
-    height: 200px;
-    width: 200px;
-    border-radius: 100px;
-    float: right;
+#contact-me .photo {
+    height: 150px;
+    width: 150px;
     margin: 20px 0 20px 20px;
 
+    
+
 }
 
-#hoc {
+#inquiry {
     /*border: 2px solid black;*/
     padding: 0 20px;
     margin: 10px 5px 10px 10px;
-    height: 300px;
+    height: auto;
     border-radius: 20px;
-    overflow: scroll;
     background-color: rgba(51, 51, 51) ;
-    color:   white
+    color:   white;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
 }
 
+form { 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+label {
+    display: flex;
+    text-align: left;
+    margin-bottom: 10px;
+}
+input, select, textarea {
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: calc(50% - 10px)
+}
+#submitButton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+br {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {   
+    /*border: 2px solid black;*/
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    display:flex;
+    justify-content: space-between;
+    position: sticky;
+    width: 100%;
+}
+
+/* LINK STYLING */
 .navAnchor:link {
     color: white;
     text-decoration: none;
@@ -103,7 +158,6 @@ h1 {
     color: blue;
     text-decoration: underline;
 }
-
 a:link {
     color: white;
 }
