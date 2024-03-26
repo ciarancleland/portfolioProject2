@@ -70,9 +70,7 @@ main {
         display: block;
         height: auto;
     }
-    footer {
-        position: unset;
-    }
+
 }
 
 
@@ -196,9 +194,8 @@ br {
 
 footer {
     /*border: 2px solid black;*/
-    position: absolute;
     bottom: 0;
-    padding: 1.2rem;
+    padding: 0.9rem;
     background-color: black;
     color: white;
     display: flex;
